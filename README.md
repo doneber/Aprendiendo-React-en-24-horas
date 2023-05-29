@@ -24,3 +24,10 @@ Todo lo que verás aquí no me lo he inventado yo, sino que aquí estan las fuen
 - [react.dev](https://react.dev/): La documentación oficial de React
 - [reactjs.wiki](https://www.reactjs.wiki/): Un sitio con preguntas frecuentes cuando aprendemos React
 - [⚛️ CURSO DE REACT 2023](https://www.youtube.com/playlist?list=PLUofhDIg_38q4D0xNWp7FEHOTcZhjWJ29): Un video curso en YouTube
+
+## Hora de Practicar
+
+### Hola Mundo en React
+
+Para empezar haremos una especie de Hola Mundo con React sin utilizar herramientas extra, solo usando HTML y JS
+[ver código](/ejercicio01/)
