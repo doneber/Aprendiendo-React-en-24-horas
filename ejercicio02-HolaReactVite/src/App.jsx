@@ -1,5 +1,7 @@
+import "./style.css";
+
 const MySuperButton = () => {
-  return <button>
+  return <button className="super-btn">
     Super Botón
   </button>
 }
