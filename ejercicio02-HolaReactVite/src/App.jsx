@@ -1,11 +1,8 @@
 import "./style.css";
 import { useState } from "react";
 
-const MySuperButton = () => {
-  const [count, setCount] = useState(0)
-  return <button className="super-btn" onClick={ () => {
-      setCount(count + 1)
-    } }>
+const MySuperButton = ({count, onClick}) => {
+  return <button className="super-btn" onClick={ onClick }> 
     Dale click y mira la magia: { count }
   </button>
 }
@@ -35,6 +32,10 @@ const userList = [
 ]
 
 function App() {
+  const [count, setCount] = useState(0)
+  const handleClick = () => {
+    setCount(count + 1)
+  }
   return (
     <>
       <h2>Usuario</h2>
@@ -44,7 +45,7 @@ function App() {
           <li><b>Nombre: </b> { user.name }</li>
           <li><b>Nickname: </b>{ user.nickname }</li>
           <li><b>Enlace de GitHub: </b> <a href={ user.githubURL }>{ user.githubURL }</a> </li>        
-          <MySuperButton />
+          <MySuperButton count={count} onClick={ handleClick } />
           { user.isGithubstar ? (
             <li>⭐ Es GitHub Star</li>
           ): (
